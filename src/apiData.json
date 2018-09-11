@@ -1,0 +1,161 @@
+{
+  "formTitle": "Dynamic Form",
+  "formData": [
+    {
+      "id": 1,
+      "type": "text",
+      "name": "name",
+      "label": "Name",
+      "properties": {
+        "required": true
+      },
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "type": "email",
+      "name": "email",
+      "label": "Email",
+      "properties": {
+        "required": true
+      },
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "type": "password",
+      "name": "password",
+      "label": "Password",
+      "properties": {
+        "required": true,
+        "pattern": "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%])[a-zA-Z0-9@#$%]{8,30}",
+        "title": "you can add any thing here..."
+      },
+      "notes": "Password should be min 8 and max 30 \nand contain at least one lowercase characters, one uppercase characters,one digit and one special symbols in list \"@#$%\""
+    },
+    {
+      "id": 4,
+      "type": "number",
+      "name": "age",
+      "label": "Age",
+      "properties": {
+        "required": true,
+        "min": 21,
+        "max": 120
+      },
+      "notes": "Age min 21 and max 120"
+    },
+    {
+      "id": 5,
+      "type": "radio",
+      "name": "gender",
+      "label": "Male",
+      "value": "male",
+      "properties": {
+        "required": true
+      },
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "type": "radio",
+      "name": "gender",
+      "label": "Female",
+      "value": "female",
+      "properties": {
+        "required": true
+      },
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "type": "search",
+      "name": "search",
+      "label": "Search for",
+      "dataList": [
+        { "value": "ahmed sallam" },
+        { "value": "Leanne Graham" },
+        { "value": "Kulas Light" },
+        { "value": "Ervin Howell" },
+        { "value": "Clementine Bauch" },
+        { "value": "Patricia Lebsack" },
+        { "value": "Chelsey Dietrich" },
+        { "value": "Mrs. Dennis Schulist" },
+        { "value": "Kurtis Weissnat" },
+        { "value": "Nicholas Runolfsdottir V" }
+      ],
+      "properties": {
+        "list": "search",
+        "autoComplete": "on"
+      },
+      "notes": "this auto complete from list "
+    },
+    {
+      "id": 8,
+      "type": "textarea",
+      "name": "about",
+      "label": "About",
+      "properties": {
+        "required": true
+      },
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "type": "select",
+      "name": "country",
+      "label": "Country",
+      "multiple": false,
+      "option": [
+        { "value": "egypt", "label": "Egypt" },
+        { "value": "us", "label": "US" },
+        { "value": "india", "label": "India" },
+        { "value": "ksa", "label": "KSA" }
+      ],
+      "properties": {},
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "type": "select",
+      "name": "language",
+      "label": "Language",
+      "option": [
+        { "value": "arabic", "label": "Arabic" },
+        { "value": "english", "label": "English" },
+        { "value": "french", "label": "French" }
+      ],
+      "properties": { "multiple": true },
+      "notes": "Available multi selection"
+    },
+    {
+      "id": 11,
+      "type": "file",
+      "name": "cv",
+      "label": "CV",
+      "properties": {},
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "type": "checkbox",
+      "name": "moreFields",
+      "label": "Do you need more fields?",
+      "checked": false,
+      "properties": {},
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "type": "checkbox",
+      "name": "isAgree",
+      "label": "Are you agree?",
+      "checked": false,
+      "properties": {
+        "required": true
+      },
+      "notes": ""
+    }
+  ],
+  "formNotes": "* means this field is required.\nThis form for learning only.\nThanks for visiting, with my best regards."
+}
